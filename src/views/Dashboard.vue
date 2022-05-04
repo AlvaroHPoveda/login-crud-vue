@@ -125,6 +125,7 @@ export default {
       } else {
         this.tasks = this.originalTasks;
       }
+      localStorage.setItem("tasks-vue", JSON.stringify(this.tasks));
     },
   },
   created: function() {

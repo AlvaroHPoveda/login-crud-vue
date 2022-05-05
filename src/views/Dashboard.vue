@@ -39,24 +39,26 @@
                   SAVE
                 </button>
               </span>
-              <button
-                class="btn btn bg-success btn-sm text-white mx-2"
-                @click="acceptTask(index)"
-              >
-                OK
-              </button>
-              <button
-                class="btn btn bg-danger btn-sm text-white mx-2"
-                @click="deleteTask(index)"
-              >
-                X
-              </button>
-              <button
-                class="btn btn bg-warning btn-sm text-white mx-2"
-                @click="seeInputUpdate(index)"
-              >
-                UPDATE
-              </button>
+              <div v-else>
+                <button
+                  class="btn btn bg-success btn-sm text-white mx-2"
+                  @click="acceptTask(index)"
+                >
+                  OK
+                </button>
+                <button
+                  class="btn btn bg-danger btn-sm text-white mx-2"
+                  @click="deleteTask(index)"
+                >
+                  X
+                </button>
+                <button
+                  class="btn btn bg-warning btn-sm text-white mx-2"
+                  @click="seeInputUpdate(index)"
+                >
+                  UPDATE
+                </button>
+              </div>
             </div>
           </div>
         </div>
